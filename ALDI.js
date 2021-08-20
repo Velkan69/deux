@@ -47,10 +47,6 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const gcdetect = JSON.parse(fs.readFileSync('./src/gcdetect.json'))
 const antilink = JSON.parse(fs.readFileSync('./src/.dat/antilink.json'))
 const _jasa = JSON.parse(fs.readFileSync('./src/.dat/antijualan.json'))
-//=======≠=[ API KEY ]===========//
-ZuxyKey = 'ZiyKey'
-const LolKey = 'genbotkey' //9928bc262baa54f422218c9a
-const apiAnto = 'hardianto' // tq bang anto
 
 fakereply = fs.readFileSync('./image/fake.jpeg')
 fakeimage = fs.readFileSync('./image/thumb.jpeg')
@@ -85,6 +81,11 @@ gaya = '```'
 shape = '⬡'
 bulet = '◯'
 G = '*'
+//=======≠=[ API KEY ]===========//
+ZuxyKey = 'ZiyKey'
+const LolKey = 'genbotkey' //9928bc262baa54f422218c9a
+const apiAnto = 'hardianto' // tq bang anto
+
 //=================================================//
 //============[ BATAS NYA ---------------- ]=====≠===≠==========\\
 // fuction STC CMD bang
@@ -157,22 +158,37 @@ function _0x187e(){const _0x5201c3=['354332XZSVKt','stringify','10gXCFmS','write
 			prem: `Fitur Ini Kusus Premium\nmau beli premium?\nchat : wa.me/6285697725326`,
 			wait: `Tunggu bntr Kak`,
 	        success: `succes....`,
-     		wrongFormat: `Format salah, coba liat lagi di menu`,
-			error: `Error Ngab!!!`,
-			lvlon: `Berhasil Mengaktifkan Mode Leveling Di Group Ini️`,
-			lvloff: `Berhasil Menonaktifkan Mode Leveling Di Group Ini️`,
-			lvlnul: `Level Mu Masih Kosong`,
-			baned: `Maaf Kamu Sudah Terbanned!!`,
+     		wrongFormat: `Format salah, coba liat lagi di menu`,
+
+			error: `Error Ngab!!!`,
+
+			lvlon: `Berhasil Mengaktifkan Mode Leveling Di Group Ini️`,
+
+			lvloff: `Berhasil Menonaktifkan Mode Leveling Di Group Ini️`,
+
+			lvlnul: `Level Mu Masih Kosong`,
+
+			baned: `Maaf Kamu Sudah Terbanned!!`,
+
 			group: `Khusus grup ngab...`,
-			Iv: ` Linknya error:v`,
-			lvlnoon: `Leveling Di Group Belum Diaktifkan`,
-			stikga: `Yah Gagal Coba Ulangi Beberapa Saat Lagi`,
-			linkga: `Link Tidak Valid`,
-			groupo: `Command Ini Khusus Untuk Group`,
-			ownerb: `Command Ini Khusus Untuk Owner`,
-			ownerg: `Command Ini Khusus Untuk Owner Group`,
-			admin: `Command Ini Khusus Untuk Admin`,
-			badmin: `BOT Harus Menjadi Admin`,
+			Iv: ` Linknya error:v`,
+
+			lvlnoon: `Leveling Di Group Belum Diaktifkan`,
+
+			stikga: `Yah Gagal Coba Ulangi Beberapa Saat Lagi`,
+
+			linkga: `Link Tidak Valid`,
+
+			groupo: `Command Ini Khusus Untuk Group`,
+
+			ownerb: `Command Ini Khusus Untuk Owner`,
+
+			ownerg: `Command Ini Khusus Untuk Owner Group`,
+
+			admin: `Command Ini Khusus Untuk Admin`,
+
+			badmin: `BOT Harus Menjadi Admin`,
+
 			}
 			
 		 // here button function
@@ -1565,7 +1581,8 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
 		    if (!arg.split('|')) return reply(`Penggunaan ${prefix}exif nama|author`)
 		    exif.create(arg.split('|')[0], arg.split('|')[1])
 		    reply('sukses')
-	        break	        
+	        break
+	        
 	        case 'colong':
 		    if (!isQuotedSticker) return reply(`Reply sticker dengan caption *${prefix}colong*`)
 		    const encmediia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -1728,7 +1745,8 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
 			if (!isOwner && !mek.key.fromMe) return reply('*lu owner bukan kontol, babi, tai, memeg,*')
 			public = true
 			return reply(`*sukses mengubah mode self ke public*\n\n*skarang fitur bisa di gunakan oleh*\n*semua member*`, text)
-			break
+			break
+
  	        case 'hidetag':
 			if (!isGroup) return reply(mess.group)
 			var value = args.join(' ')
