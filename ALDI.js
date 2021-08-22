@@ -51,14 +51,14 @@ const _jasa = JSON.parse(fs.readFileSync('./src/.dat/antijualan.json'))
 fakereply = fs.readFileSync('./image/fake.jpeg')
 fakeimage = fs.readFileSync('./image/thumb.jpeg')
 cewe = fs.readFileSync('./image/cewe.jpeg')
-ownerNumber = ["0@s.whatsapp.net","6285697725326@s.whatsapp.net","62856977253261@s.whatsapp.net"] // yang kosong 0 itu isi pake no kalian guys
+ownerNumber = ["51902679067 @s.whatsapp.net"] // yang kosong 0 itu isi pake no kalian guys
 fake = 'ALDI FAUZI' // ini fake
-namaown = 'ZuxyGanz' //nama owner
-noown = '6285697725326' //nomor owner
-namabot = 'SAINS BOT' // nama bot
+namaown = 'WhoIsLaughts' //nama owner
+noown = '51902679067' //nomor owner
+namabot = 'ENCHUFABOT' // nama bot
 namabot2 = 'GANTI'// nama bot ⟨ nama bot ⟩
 ytown = 'https yt'
-githubown = 'https://github.com/'
+githubown = 'https://github.com/Velkan69/deux'
 const
 	{
 		WAConnection,
